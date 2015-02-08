@@ -6,28 +6,34 @@ Usage
 -----
 Basic usage:
 
-``` var merge = require('merge-to-source');
+```
+var merge = require('merge-to-source');
 var pets = { name: 'Spot', age: 3 };
 var branch = merge(source);
 pets.location = 'Earth';
 branch.age = 4;
 merge(branch, pets);
-//source: { name: 'Spot', age: 4, location: 'Earth' } ```
+//pets: { name: 'Spot', age: 4, location: 'Earth' }
+```
 
 Clone an object and store its initial state:
 
-``` var source = { name: 'Spot', age: 3 };
+```
+var source = { name: 'Spot', age: 3 };
 var branch = merge(source);
 //make some changes
-merge(branch, source); ```
+merge(branch, source);
+```
 
-Bring your own object:
+Bring your own object and store its initial state:
 
-``` var source = { name: 'Spot', age: 3 };
+```
+var source = { name: 'Spot', age: 3 };
 var branch = { name: 'Spot', age: 3 };
 merge(branch, true);
 //make some changes
-merge(branch, source); ```
+merge(branch, source);
+```
 
 Install
 -------
