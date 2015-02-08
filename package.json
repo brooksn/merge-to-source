@@ -1,0 +1,25 @@
+{
+  "name": "merge-to-source",
+  "version": "0.0.1",
+  "description": "Merge an object's changes back to its source.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brooksn/merge-to-source"
+  },
+  "author": "brooksn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brooksn/merge-to-source/issues"
+  },
+  "homepage": "https://github.com/brooksn/merge-to-source",
+  "devDependencies": {
+    "should": "^4.6.5"
+  },
+  "dependencies": {
+    "jsondiffpatch": "^0.1.27"
+  }
+}
